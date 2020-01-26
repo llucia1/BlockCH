@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/orderlost",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\OrderLost\\Providers\\OrderLostServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\OrderLost\\": ""
+        }
+    }
+}

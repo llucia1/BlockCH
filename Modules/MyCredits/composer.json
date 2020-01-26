@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/mycredits",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\MyCredits\\Providers\\MyCreditsServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MyCredits\\": ""
+        }
+    }
+}

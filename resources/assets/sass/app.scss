@@ -1,0 +1,333 @@
+
+// Fonts
+//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+//@import "variables";
+
+// Bootstrap
+//@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+//variables
+$brand-primary: #5E50F9;
+$brand-success: #5E50F9;
+$brand-danger: #5E50F9;
+
+.card{
+    .card-title{
+        text-transform: none;
+    }
+}
+a{
+    &.btn{
+        color:white!important;
+        &.btn-color-dark{
+            color:black !important;
+            background-color: #f2f1f0;
+        }
+    }
+}
+//preloader
+#content-preloader {
+    
+	position: absolute;
+	width: 100%;
+	left: 0;
+	height: 100%;
+    top: 0;
+    z-index: 9;
+    background-color: white;
+    opacity: 0.8;
+    p{
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        left: 47%;
+    }
+}
+.btn-inverse-dark.focus, .btn-inverse-dark:focus {
+	box-shadow: none!important;
+}
+.has-error{
+    input{
+        border: 1px solid #DCB6B9;
+    }
+} 
+/*
+   * Estilos para el modal de VUE
+   */
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+}
+.modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-container {
+    width: 500px;
+    margin: 0px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-header h3 {
+    margin-top: 0;
+    color: $brand-primary;
+}
+.modal-body {
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-weight: lighter;
+    p{
+        strong{
+            &.success{
+                color: $brand-success;
+            }
+            &.danger{
+                color: $brand-danger;
+            }
+        }
+    }
+
+}
+.modal-default-button {
+    float: right;
+}
+#chapters{
+    .modal-container{
+        width: 750px;
+    }
+    .modal-body {
+        overflow-x: auto;
+        height: 420px;
+    }
+}
+.btn-group{
+    .dropdown-toggle:hover{
+        background-color: #e6dee8;
+    }
+}
+.table{
+    .btn{
+        &.btn-icon{
+            width: 27px;
+            height: 27px;
+        }
+    }
+}
+.auth{
+    .brand-logo img {
+        width: 360px;
+    }
+} 
+.btn-gradient-primary {
+	background: linear-gradient(to right, #D0C585, #82622C);
+}
+a{
+    &.text-primary,&.text-primary:hover,&.text-primary:focus {
+        color: #82622C !important;
+    }
+}
+.navbar.default-layout-navbar .navbar-brand-wrapper .navbar-brand img {
+	width: calc(314px - 120px);
+	height: auto;
+}
+//accordion
+.md-accordion .card:first-of-type, .md-accordion .card:not(:first-of-type):not(:last-of-type) {
+    border-bottom: 1px solid #e0e0e0;
+}
+.md-accordion .card .card-header {
+    border-bottom: 0;
+    padding: 1rem 1.5rem;
+    background: 0 0;
+}
+.md-accordion .card .card-header a {
+    -webkit-transition: ease-in-out .3s;
+    -o-transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
+}
+.mb-0, .my-0 {
+    margin-bottom: 0 !important;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+button{
+    &.btn{
+        padding: 16px !important;
+    }
+}
+/*timeline chat*/
+#wallmessages{
+    margin-top: 45px;
+}
+.message-item {
+    margin-bottom: 25px;
+    margin-left: 40px;
+    position: relative;
+    }
+    .message-item .message-inner {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    position: relative;
+    }
+    .message-item .message-inner:before {
+    border-right: 10px solid #ddd;
+    border-style: solid;
+    border-width: 10px;
+    color: rgba(0,0,0,0);
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    left: -20px;
+    top: 6px;
+    width: 0;
+    }
+    .message-item .message-inner:after {
+    border-right: 10px solid #fff;
+    border-style: solid;
+    border-width: 10px;
+    color: rgba(0,0,0,0);
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    left: -18px;
+    top: 6px;
+    width: 0;
+    }
+    .message-item:before {
+    background: #fff;
+    border-radius: 2px;
+    bottom: -30px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    content: "";
+    height: 100%;
+    left: -30px;
+    position: absolute;
+    width: 3px;
+    }
+    .message-item:after {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    content: "";
+    height: 15px;
+    left: -36px;
+    position: absolute;
+    top: 10px;
+    width: 15px;
+    }
+    .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+    }
+    .message-item .message-head {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    }
+    .message-item .message-head .avatar {
+    margin-right: 20px;
+    }
+    .message-item .message-head .user-detail {
+    overflow: hidden;
+    }
+    .message-item .message-head .user-detail h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    }
+    .message-item .message-head .post-meta {
+    float: left;
+    padding: 0 15px 0 0;
+    }
+    .message-item .message-head .post-meta >div {
+    color: #333;
+    font-weight: bold;
+    text-align: right;
+    }
+    .post-meta > div {
+    color: #777;
+    font-size: 12px;
+    line-height: 22px;
+    }
+    .message-item .message-head .post-meta >div {
+    color: #333;
+    font-weight: bold;
+    text-align: right;
+    }
+    .post-meta > div {
+    color: #777;
+    font-size: 12px;
+    line-height: 22px;
+    }
+    .message-item img {
+     min-height: 40px;
+     max-height: 40px;
+    }
+//responsive
+$extraSmall: 576px;
+
+@media screen and (max-width: $extraSmall) {
+    .navbar{
+        .brand-logo-mini{
+            margin-left: 7px;
+        }
+    }
+    .modal-mask{
+        .modal-container{
+            width: 91%;
+        }
+    }
+    .content-wrapper{
+        &.auth{
+            background: transparent !important;
+            padding: 0;
+            .brand-logo{
+                img{
+                    width:100%;
+                }
+            }
+        }
+        .w-100{
+            margin-left: 0;
+        }
+        .page-header{
+            .page-title,.breadcrumb{
+                width: 100%;
+            }
+        }
+    }
+
+    #table-data{
+        overflow-y: scroll;
+        .card-description{
+            width: 100%;
+        }
+        .form-group{
+            padding: 0;
+        }
+        .pagination{
+            float: left!important;
+        }
+    }
+    .btn{
+        width: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/videocategories",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\VideoCategories\\Providers\\VideoCategoriesServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\VideoCategories\\": ""
+        }
+    }
+}

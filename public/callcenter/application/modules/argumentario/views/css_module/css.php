@@ -1,0 +1,1 @@
+<?= link_tag('assets/apps/scripts/Rich-Text-Editor-jQuery-RichText/src/richtext.min.css') ?>
